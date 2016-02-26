@@ -1,4 +1,4 @@
-# my vimrc
+#vimrc
 ```
 git clone git@github.com:chetantarale/dotfiles.git
 mv ~/.vimrc ~/.vimrc.old
