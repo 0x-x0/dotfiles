@@ -1,6 +1,6 @@
 # my vimrc
 ```
-`git clone git@github.com:chetantarale/dotfiles.git`
+git clone git@github.com:chetantarale/dotfiles.git
 mv ~/.vimrc ~/.vimrc.old
 cd dotfiles
 ./setup-vim.sh
