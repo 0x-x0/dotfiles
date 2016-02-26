@@ -76,7 +76,13 @@ autocmd BufWinLeave * call clearmatches()
 map <c-f> :call JsBeautify()<cr>
 " Make <Esc> clear search highlights
 let mapleader = ' '
-let @s='0wyt.k*$%ofunction pA(bag, next) {var who = bag.who + ''|'' + pA.name;logger.verbose(''Inside'', who);return next();}'
+let @s='0wyt.k*$%o
+function pA(bag, next) {
+var who = bag.who + ''|'' + pA.name;
+logger.verbose(''Inside'', who);
+
+return next();
+}'
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 nnoremap <leader>n :bnext<CR>
@@ -105,3 +111,12 @@ nnoremap <leader>bd :CtrlPCurWD<cr>
 nnoremap <leader>ca :lcd ~/Shippable/api<cr>
 nnoremap <leader>cw :lcd ~/Shippable/www<cr>
 let g:ctrlp_working_path_mode = 0
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+set relativenumber
